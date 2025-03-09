@@ -1,0 +1,371 @@
+<resources>
+    <string name="app_name">GoodMetrics</string>
+    <string name="login_fragment_label">Login Fragment</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+
+    <string name="permission_denied">Permission Denied!</string>
+    <string name="write_permission_denied_text">We will store the images you take on Super Money in your phone. Super Money does not store any other images on your phone.</string>
+    <string name="retry">Retry</string>
+    <string name="retake">Retake</string>
+    <string name="btn_ok">OK</string>
+
+    <string name="username">Mobile Number</string>
+    <string name="school_name">School Name</string>
+    <string name="location">Location Name</string>
+    <string name="name_of_school_representative">Name of the school representative whom mobiliser met</string>
+    <string name="mobile_number_of_school_representative">Mobile Number of the school representative whom mobiliser met</string>
+    <string name="u_dise_code">UDISE Code</string>
+    <string name="ward">Ward/Block</string>
+    <string name="district">District</string>
+    <string name="school_Code">School Code</string>
+    <string name="todays_visit">Today’s Visits</string>
+    <string name="todays_visit_left">visits left to sync</string>
+    <string name="visit_today">visits today</string>
+    <string name="enter_school_Code">Enter School Code</string>
+    <string name="enter_school_name">Enter School name</string>
+    <string name="remarks">Remark</string>
+    <string name="captured_images">Captured Images</string>
+    <string name="type_code">Type your 6 digit security code</string>
+    <string name="username_placeholder">Enter here</string>
+    <string name="enter_here">Enter here</string>
+    <string name="enter_remark">Enter remark</string>
+    <string name="entervalue">Enter value</string>
+    <string name="login_welcome">Welcome to \nGoodMetrics! </string>
+    <string name="login_info">Please sign-in to your account.</string>
+    <string name="rights">Hindustan Unilever Limited\n© Unilever 2024</string>
+    <string name="selfie_at_school">Selfie at first school</string>
+    <string name="selfie_at_house">Selfie at the location</string>
+    <string name="selfie_at_house_description">Ensure full face and shoulders are visible</string>
+    <string name="picture_school_name">Picture of the school name</string>
+    <string name="material_info">Full image of mobiliser with Curriculum material</string>
+    <string name="selfie_with_school_name">Selfie with the school name or UDISE code</string>
+
+    <string name="ack_letter_picture">Acknowledgement letter picture</string>
+    <string name="or_select_location">Or select from below</string>
+    <string name="login_button">Login</string>
+    <string name="capture">Capture</string>
+    <string name="record">Record</string>
+    <string name="save">Save</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="proceed">Proceed</string>
+    <string name="punch_in">Punch In</string>
+    <string name="punch_out">Punch Out</string>
+    <string name="search">Search</string>
+    <string name="Sync">Sync</string>
+    <string name="mark_your_attendance">Mark your attendance</string>
+    <string name="status">Status</string>
+    <string name="location_name">Location name</string>
+    <string name="my_visits">My Visits</string>
+    <string name="offline_visits">Offline Visits</string>
+    <string name="communicators">Communicators</string>
+    <string name="add_household">Add New Household</string>
+    <string name="my_area">My Area</string>
+    <string name="my_location">My Location</string>
+    <string name="my_performance">My Performance</string>
+    <string name="visit_number">Visits today</string>
+    <string name="punch_time">Punch in time </string>
+    <string name="my_attendence">My Attendance</string>
+    <string name="attendance">Mark Attendance  </string>
+    <string name="school_code_heading">School Code </string>
+    <string name="school_activity_heading">School Activity</string>
+    <string name="attendance_info">Ensure images are clear or retake them </string>
+    <string name="school_code_info">Select your visit for this school</string>
+    <string name="school_activity_sub_title">Fill up the following details</string>
+    <string name="time">Time </string>
+    <string name="date">Date </string>
+    <string name="start_new_project">Start new projects </string>
+    <string name="otp_info">Make your project management easy!</string>
+    <string name="terms_condition">I agree to <a style="color:#2C41CA" href="http://somesite.com/">privacy policy &amp; terms</a></string>
+    <string name="otp_sub_info1">Enter the verification code from the mobile no </string>
+    <string name="otp_sub_info2"> in the field below.</string>
+    <string name="visit">Visit</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="visit_completed">%1$d Completed</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+
+    <string name="disce_code">UDISE Code</string>
+    <string name="recording">Audio recording has started</string>
+    <string name="teacher_no">No. of teachers trained</string>
+    <string name="student_no">No. of students as per record</string>
+    <string name="books_no">No. of books handed over to school</string>
+    <string name="number_of_books_given">No. of books given to school</string>
+    <string name="tracker_no">No. of filled trackers collected</string>
+    <string name="more_tracker">School asked to revisit for more tracker collection</string>
+    <string name="teachers_trained">No. of teachers trained</string>
+    <string name="representetive_name">Name of the school representative who collected the books</string>
+    <string name="representetive_number">Mobile Number of the school representative who collected the books</string>
+    <string name="principal_name">Name of the Principal</string>
+    <string name="principal_number">Mobile number of the Principal</string>
+    <string name="revisit_applicable">Revisit Applicable</string>
+
+    <string name="school_pic1">Picture of the school name</string>
+    <string name="school_pic2">Selfie with the school name or UDISE code</string>
+    <string name="school_pic3">Image of students showing the filled trackers in books</string>
+    <string name="school_pic4">Image of teachers handing over the trackers</string>
+    <string name="school_pic5">Acknowledgement letter picture</string>
+
+    <string name="form1">Name of the Person contacted in school</string>
+    <string name="form2">Mobile number of the person contacted in school</string>
+    <string name="form3">Name of the Principal</string>
+    <string name="form4">Mobile number of the Principal</string>
+    <string name="form5">Revisit Applicable</string>
+    <string name="form6">Is the Curriculum on track?</string>
+    <string name="till_date">Till Date</string>
+    <string name="view_school_location">View School Location</string>
+    <string name="no_of_books_handed_over">No. of books handed over to school</string>
+    <string name="no_of_books_given">No. of books given to school</string>
+    <string name="submit">Submit</string>
+    <string name="select_flathouse_number">Select Flat/House Number</string>
+    <string name="session_expire">Session Expired, Login Again</string>
+    <string name="mobiliser">Mobiliser</string>
+    <string name="have_the_books_distribution_to_students_done">Have the books distribution to students done?</string>
+    <string name="was_video_shared_with_teacher">Was video shared with Teacher?</string>
+    <string name="pending">Pending</string>
+    <string name="todays_visits">Today’s Visits</string>
+    <string name="completed">Completed</string>
+    <string name="previous_visits">Previous Visits</string>
+    <string name="mobilisers_image">Mobilisers Image</string>
+    <string name="mobiliser_name">Mobiliser Name</string>
+    <string name="logout">Logout</string>
+    <string name="visit_1_header">Visit 1 School Activity</string>
+
+    <string name="visit_pic_1">Image of the school\nbuilding</string>
+    <string name="visit_pic_2">Selfie with school UDISE Code</string>
+    <string name="visit_pic_3">Image of teachers seeing\ntraining video with books\nplaced on table</string>
+    <string name="visit2_pic_detail_3">Image of teachers\nteaching the Curriculum in the class</string>
+    <string name="visit_pic_6">Image of filled trackers on principal’s desk with the principal</string>
+    <string name="visit_pic_4">Image of Acknowledgement</string>
+    <string name="visit_pic_detail_3">Image of school teachers with video &amp; books visible on desk </string>
+    <string name="visit_pic_5">Image of students with Swasthya Curriculum books in their hands</string>
+    <string name="camera_info">Capture image in landscape mode</string>
+    <string name="camera_portrait_info">Capture image in portrait mode</string>
+    <string name="add_school_code">Add school code</string>
+    <string name="add_house_code">House code</string>
+    <string name="add_school">Add School</string>
+    <string name="add_house">Add House</string>
+    <string name="choose_option">Choose Option</string>
+    <string name="ward_block">Ward/Block</string>
+    <string name="state">State</string>
+    <string name="btnAdd">Add</string>
+    <string name="btnAddHouse">Add House Code</string>
+    <string name="btnClose">Close</string>
+    <string name="select_district">Select District</string>
+    <string name="get_directions">Get Directions</string>
+    <string name="auditor_visit_1_pic_1">Selfie with the school name or UDISE code</string>
+    <string name="auditor_visit_1_pic_2">Acknowledgement letter picture</string>
+
+    <string name="auditor_visit_2_pic_1">Picture of the school name</string>
+    <string name="auditor_visit_2_pic_2">Selfie with the school name or UDISE code</string>
+    <string name="auditor_visit_2_pic_3">Acknowledgement letter picture</string>
+
+    <string name="auditor_visit_3_pic_1">Picture of the school name</string>
+    <string name="auditor_visit_3_pic_2">Selfie with the school name or UDISE code</string>
+    <string name="auditor_visit_3_pic_3">Trackers acknowledgement form</string>
+    <string name="were_the_filled_trackers_collected">Were the Filled Trackers Collected?</string>
+    <string name="add_new">Add New</string>
+    <string name="enter_number_here">Search here</string>
+    <string name="enter_code">Search Code</string>
+    <string name="successfully_captured_visit_details">Successfully captured visit details.</string>
+    <string name="successfully_marked_attendance">Successfully punched out.</string>
+    <string name="couldn_t_submit_visit_details">Couldn\'t submit visit details</string>
+    <string name="school_closed_merged">School Closed/Merged</string>
+    <string name="school_asked_to_revisit_for_more_tracker_collection">School asked to Revisit for more tracker collection</string>
+
+    <string name="yes_correct">Yes, This is correct</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="yes_collected">Yes, Collected</string>
+    <string name="not_collected">Not Collected</string>
+
+    <string name="yes_distributed">Yes, Distributed</string>
+    <string name="not_distributed">Not Distributed</string>
+
+    <string name="yes_shared">Yes, Shared</string>
+    <string name="not_shared">Not Shared</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="upload_picture_of_door">Team Selfie image with the door number</string>
+    <string name="picture_of_door">Picture of door</string>
+    <string name="conversation_image">Conversation Image</string>
+    <string name="photo_with_the_house_member">Photo with the house member</string>
+    <string name="view_details">View Details</string>
+    <string name="view_details_desc">Photo with house member along with leave behind. If they are not comfortable with it, please click a photo of handing over the segregation chart (no faces required to be captured)</string>
+    <string name="response">Response *</string>
+    <string name="select_your_visit_for_this_village">Select your visit for this village</string>
+    <string name="village_name">Village Name *</string>
+    <string name="wing_Name">Wing/Unit/Block</string>
+    <string name="flat_number">Flat/House number</string>
+    <string name="reason">Reason</string>
+    <string name="select_date_for_visit">Select date for visit</string>
+    <string name="select_time_for_visit">Select time for visit</string>
+    <string name="floor">Floor</string>
+    <string name="flat_details">Flat Details</string>
+    <string name="area_type">Area type</string>
+    <string name="zone">Zone</string>
+    <string name="wardt">Ward</string>
+    <string name="did_you_take_consent_for_their_participation">Was consent for participation taken? *</string>
+    <string name="are_you_and_your_family_aware_of_waste_segregation">Is waste segregated into dry and wet categories in your household? *</string>
+    <string name="how_many_categories_should_it">In your experience, how many other households separate waste in this society/colony/lane? *</string>
+    <string name="do_you_currently_segregate">Do you currently segregate your waste before disposing?</string>
+    <string name="how_do_you_currently_dispose_the_waste">How do you currently dispose the waste? *</string>
+    <string name="how_does_the_society_housekeeping_staff">How does the society housekeeping staff collect the waste from your house? *</string>
+    <string name="how_does_the_collection_vehicle_collect_the_waste_after_you_dispose_it">How does the collection vehicle collect the waste after you dispose it? *</string>
+    <string name="how_many_times_in_a_week_you_give_you_waste_to_the_collection_van">How many times in a week, you give you waste to the collection van? *</string>
+    <string name="does_this_household_have_a_champion">Does this household have a champion?</string>
+    <string name="support_our_initiative">Would you like to support our initiative by spreading the awareness?</string>
+    <string name="name">Name</string>
+    <string name="if_yes_name_of_the_champion">If Yes,Name of the Champion</string>
+    <string name="remarks_star">Remarks *</string>
+    <string name="share_your_experience">Share your experience</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="partner_details">Partner Details</string>
+    <string name="no_partner_assigned_yet">No partner assigned yet!</string>
+    <string name="who_did_you_speak_with">Whom did you engage with? *</string>
+    <string name="team_selfie_at_the_location">Team Selfie at the location</string>
+    <string name="team_selfie_at_location">Team selfie at location</string>
+    <string name="picture_of_location">Picture of location</string>
+    <string name="selfie_at_village">Selfie at village</string>
+    <string name="updated_2nd_visit_door_sticker_on_door">Identifier sticker with activity date mentioned</string>
+    <string name="house_code">House Code</string>
+    <string name="search_village">Search Village</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="address">Address</string>
+    <string name="customer_mobile_number">Customer Mobile Number</string>
+    <string name="no_of_members_present_in_house">No. Of Members Present In House</string>
+    <string name="is_there_a_toilet_inside">Is There A Toilet Inside?</string>
+    <string name="is_there_a_washing_machine_in_the_house">Is There A Washing Machine In The House?</string>
+    <string name="has_the_customer_visited_suvidha_centre">Has The Customer Visited Suvidha Centre?</string>
+    <string name="selfie_image_of_communicator_image_with_the_house_code_sticker_on_door">Identifier Sticker with activity date mentioned</string>
+    <string name="selfie_image_outside_the_door_before_entering_the_house">Selfie Image outside the door before entering the house</string>
+    <string name="long_shot_of_mobiliser_showing_suvidha_photobook_in_the_household">Long shot of mobiliser showing Suvidha photobook in the household</string>
+    <string name="long_shot_of_mobiliser_handing_over_laundry_discount_coupon">Long shot of mobiliser handing over laundry discount coupon</string>
+    <string name="consent_form">Consent Form</string>
+    <string name="lead_quality">Lead Quality</string>
+    <string name="germ_glow_image">Germ glow image</string>
+    <string name="selfie_image_outside_the_door_with_visible_door_sticker_from_visit_1">Selfie image outside the door before entering the house with visible sticker of 1st and 2nd visit with date</string>
+    <string name="door_sticker_with_updated_date_of_Visit_2">Identifier sticker with activity date mentioned</string>
+    <string name="activity_image_while_conducting_the_activity_along_with_the_flipchart">Activity image while conducting the activity along with the flipchart</string>
+    <string name="has_the_customer_created_a_pass_for_suvidha_center">Has The Customer Created A Pass For Suvidha Center</string>
+    <string name="add_coupon_serial_number">Add Coupon Serial Number</string>
+    <string name="has_the_discount_coupon_for_suvidha_laundry_service_been_used_or_not">Has The Discount Coupon For Suvidha Laundry Service Been Used Or Not?</string>
+    <string name="selfie_image_outside_the_Door_sticker_image_with_visit_2_date_visible">Selfie image outside the door before entering the house with visible sticker of visit 1 or door marking with marker</string>
+    <string name="water_demo_with_glass_and_mud">Water demo with glass and mud</string>
+    <string name="nutrition_sticker_at_kitchen">Nutrition sticker at kitchen</string>
+    <string name="my_selfie_at_the_location">My Selfie at the location</string>
+    <string name="ensure_full_face_and_shoulders_are_visible">Ensure full face and shoulders are visible</string>
+    <string name="image_of_communicator_while_conducting_activity">Image of communicator while conducting activity</string>
+    <string name="communicator_visit_audio_recording">Communicator visit audio recording</string>
+    <string name="audio_recording_has_stopped">Audio recording has stopped</string>
+    <string name="audio_recording_has_started">Audio recording has started</string>
+    <string name="audio_recording_has_paused">Audio recording has paused</string>
+    <string name="fill_up_the_following_details">Fill up the following details </string>
+    <string name="add_to_offline">Add to offline </string>
+    <string name="remove">Remove</string>
+
+
+    <string name="location_selfie">Location Selfie</string>
+    <string name="selfie_at_the_start_of_the_village_where_village_board_is_visible">Selfie at the start of the village where village board is visible</string>
+    <string name="picture_while_conducting_the_activity">Picture while conducting the activity</string>
+    <string name="village_launch">Village Launch</string>
+    <string name="ipc01">IPC 01</string>
+    <string name="ipc02">IPC 02</string>
+    <string name="rmp">RMP Session</string>
+    <string name="scp">SCP</string>
+    <string name="awc_session">AWC Session</string>
+    <string name="assets_check">Assets check</string>
+    <string name="build_your_balanced_plate">Build your balanced plate </string>
+    <string name="tasty_twist_challenge">Tasty twist challenge</string>
+    <string name="pyramid_activity">Pyramid activity</string>
+    <string name="ek_katori_tool_kit">Ek katori tool kit</string>
+    <string name="ek_katori_demo">Ek katori demo</string>
+    <string name="bindi_tool">Bindi tool</string>
+    <string name="riddle_cards">Riddle cards</string>
+    <string name="calendars">Calendars</string>
+    <string name="giveaway_badge">Giveaway (Badge)</string>
+    <string name="recipe_book">Recipe book</string>
+    <string name="ifa_tool">IFA tool</string>
+    <string name="d_booklet">3D Booklet</string>
+    <string name="picture_with_IPC_Assets">Picture with IPC Assets</string>
+    <string name="consent_form_picture">Consent Form Picture</string>
+    <string name="image_while_conducting_pyramid_activity">Image while conducting Pyramid activity</string>
+    <string name="image_while_giving_away_the_calendar">Image while giving away the Calendar</string>
+    <string name="consent_card_picture">Consent Card Picture</string>
+    <string name="image_of_all_TG_where_faces_are_visible">Image of all TG where faces are visible</string>
+    <string name="image_while_conducting_build_your_balanced_plate_activity">Image while conducting Build your balanced plate activity</string>
+    <string name="image_while_conducting_ek_katori_demo">Image while conducting Ek katori demo</string>
+    <string name="image_while_conducting_tasty_twist">Image while conducting tasty twist</string>
+    <string name="image_with_the_students_holding_giveaway">Image with the students holding giveaway</string>
+    <string name="image_of_TG_where_all_faces_are_visible">Image of TG where all faces are visible</string>
+    <string name="image_with_TG_carrying_bindi_tool_Recepie_book_in_hand_Long_shot_all_TG_visible">Image with TG carrying Bindi tool &amp; Recepie book in hand (Long shot, all TG visible)</string>
+    <string name="no_of_TG_present">No. of TG Present</string>
+    <string name="total_number_of_students">Total number of students</string>
+    <string name="no_of_bindi_tool_distributed">No. of Bindi tool distributed</string>
+    <string name="total_no_of_givaway_distributed">Total no of givaway distributed</string>
+    <string name="no_of_recipe_book_distributed">No. of Recipe book distributed</string>
+    <string name="no_of_IFA_tools_distributed">No of IFA tools distributed</string>
+    <string name="no_of_pregnant_women_present">No of Pregnant women present</string>
+    <string name="name_of_session_monitor">Name of Session Monitor</string>
+    <string name="number_of_calendar_distributed">Number of calendar distributed</string>
+    <string name="contact_number_of_principal">Contac number of principal</string>
+    <string name="name_of_principal">Name of Principal</string>
+    <string name="name_of_RMP">Name of RMP</string>
+    <string name="contact_number_of_RMP">Contact Number of RMP</string>
+    <string name="name_of_anganwadi_sevika">Name of Anganwadi Sevika</string>
+    <string name="session_monitor_contact_number">Session Monitor Contact Number</string>
+    <string name="mobile_number_of_anganwadi_sevika">Mobile number of Anganwadi Sevika</string>
+    <string name="image_of_session_monitor_declaration_form">Image of Session Monitor Declaration form</string>
+    <string name="location_selfie_outside_anganwadi_kendra_with_the_board_visible">Location selfie (Outside Anganwadi kendra with the board visible)</string>
+    <string name="picture_with_anganwadi_session_assets">Picture with Anganwadi session assets</string>
+    <string name="image_with_TG_carrying_giveaway_bindi_tool_and_IFA_tool">Image with TG carrying giveaway (IFA tool)</string>
+    <string name="image_of_giving_away_3D_booklet_to_anganwadi_sevika">Image of giving away 3D booklet to Anganwadi Sevika</string>
+    <string name="location_selfie_outside_the_school_where_school_name_UDISE_code_is_visible">Location selfie (Outside the school where School name/UDISE code is visible)</string>
+    <string name="acknowledgment_letter_picture">Acknowledgment Letter Picture</string>
+    <string name="location_selfie_outside_the_RMP_clinic_with_an_identifier_name_board">Location selfie (Outside the RMP clinic with an identifier (name board)</string>
+
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/skb_dashboard_mobiliser_nav_graph"
+    app:startDestination="@id/SKBDashboardMobiliserFragment">
+
+    <fragment
+        android:id="@+id/SKBDashboardMobiliserFragment"
+        android:name="com.hul.skb.mobiliser.ui.dashboard.SKBDashboardMobiliserFragment"
+        android:label="SKBDashboardMobiliserFragment" >
+        <action
+            android:id="@+id/action_SKBDashboardMobiliserFragment_to_SKBMobiliserAttendenceFragment"
+            app:destination="@id/SKBMobiliserAttendenceFragment" />
+        <action
+            android:id="@+id/action_SKBDashboardMobiliserFragment_to_SKBMobileserPreFormFragment"
+            app:destination="@id/SKBMobileserPreFormFragment" />
+        <action
+            android:id="@+id/action_SKBDashboardMobiliserFragment_to_punchOutFragment"
+            app:destination="@id/punchOutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SKBMobiliserAttendenceFragment"
+        android:name="com.hul.skb.mobiliser.ui.attendence.SKBMobiliserAttendenceFragment"
+        android:label="SKBMobiliserAttendenceFragment" />
+    <fragment
+        android:id="@+id/SKBMobileserPreFormFragment"
+        android:name="com.hul.skb.mobiliser.ui.preForm.SKBMobileserPreFormFragment"
+        android:label="SKBMobileserPreFormFragment" >
+        <action
+            android:id="@+id/action_SKBMobileserPreFormFragment_to_villageLaunchFragment"
+            app:destination="@id/villageLaunchFragment" />
+        <action
+            android:id="@+id/action_SKBMobileserPreFormFragment_to_IPC1Fragment"
+            app:destination="@id/IPC1Fragment" />
+        <action
+            android:id="@+id/action_SKBMobileserPreFormFragment_to_AWCSessionFragment"
+            app:destination="@id/AWCSessionFragment" />
+        <action
+            android:id="@+id/action_SKBMobileserPreFormFragment_to_SCPFragment"
+            app:destination="@id/SCPFragment" />
+        <action
+            android:id="@+id/action_SKBMobileserPreFormFragment_to_RMPFragment"
+            app:destination="@id/RMPFragment" />
+        <action
+            android:id="@+id/action_SKBMobileserPreFormFragment_to_IPC2Fragment"
+            app:destination="@id/IPC2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/villageLaunchFragment"
+        android:name="com.hul.skb.mobiliser.ui.villagelaunch.VillageLaunchFragment"
+        android:label="VillageLaunchFragment" />
+    <fragment
+        android:id="@+id/IPC1Fragment"
+        android:name="com.hul.skb.mobiliser.ui.ipc1.IPC1Fragment"
+        android:label="IPC1Fragment" />
+    <fragment
+        android:id="@+id/AWCSessionFragment"
+        android:name="com.hul.skb.mobiliser.ui.awc.AWCSessionFragment"
+        android:label="AWCSessionFragment" />
+    <fragment
+        android:id="@+id/SCPFragment"
+        android:name="com.hul.skb.mobiliser.ui.scp.SCPFragment"
+        android:label="SCPFragment" />
+    <fragment
+        android:id="@+id/RMPFragment"
+        android:name="com.hul.skb.mobiliser.ui.rmp.RMPFragment"
+        android:label="RMPFragment" />
+    <fragment
+        android:id="@+id/IPC2Fragment"
+        android:name="com.hul.skb.mobiliser.ui.ipc2.IPC2Fragment"
+        android:label="IPC2Fragment" />
+    <fragment
+        android:id="@+id/punchOutFragment"
+        android:name="com.hul.skb.mobiliser.ui.punchout.PunchOutFragment"
+        android:label="PunchOutFragment" />
+</navigation>

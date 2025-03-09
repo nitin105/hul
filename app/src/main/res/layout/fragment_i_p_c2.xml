@@ -1,0 +1,568 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hul.skb.mobiliser.ui.ipc2.IPC2ViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f9fa">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="56dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <ImageView
+                    android:id="@+id/stats"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/chevron_left"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toEndOf="@+id/stats"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/visitTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans"
+                        android:text="@string/ipc02"
+                        android:textColor="#2F2B3D"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/visitSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans"
+                        android:text="@string/fill_up_the_following_details"
+                        android:textColor="#6d6b77"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@color/white"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/public_sans"
+                            android:lineHeight="20dp"
+                            android:text="@string/location_selfie"
+                            android:textColor="#6d6b77"
+                            android:textFontWeight="400"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="10dp"
+                            app:layout_constraintEnd_toStartOf="@+id/capture1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="@id/actions1"/>
+
+                        <LinearLayout
+                            android:id="@+id/actions1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:visibility="@{viewModel.captured1Visibility}">
+
+                            <ImageView
+                                android:id="@+id/view1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/view" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/circlecheck" />
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/capture1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:background="#dde0f6"
+                            android:fontFamily="@font/publicsans"
+                            android:paddingHorizontal="20dp"
+                            android:text="@string/capture"
+                            android:textAllCaps="false"
+                            android:textColor="@color/purple_500"
+                            android:textFontWeight="700"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:visibility="@{viewModel.capture1Visibility}"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans"
+                        android:lineHeight="20dp"
+                        android:text="@string/assets_check"
+                        android:textColor="#2F2B3D"
+                        android:textFontWeight="400"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tasty_twist_challenge"
+                        android:checked="@={viewModel.tastyTwistChallenge}"
+                        android:textColor="#6d6b77"
+                        android:textSize="16sp"
+                        android:padding="8dp"/>
+                    <CheckBox
+                        android:id="@+id/checkbox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ek_katori_demo"
+                        android:checked="@={viewModel.ekKatoriDemo}"
+                        android:textColor="#6d6b77"
+                        android:textSize="16sp"
+                        android:padding="8dp"/>
+
+                    <CheckBox
+                        android:id="@+id/checkbox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/riddle_cards"
+                        android:checked="@={viewModel.riddleCards}"
+                        android:textColor="#6d6b77"
+                        android:textSize="16sp"
+                        android:padding="8dp"/>
+
+                    <CheckBox
+                        android:id="@+id/checkbox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/calendars"
+                        android:checked="@={viewModel.calendars}"
+                        android:textColor="#6d6b77"
+                        android:textSize="16sp"
+                        android:padding="8dp"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/public_sans"
+                            android:lineHeight="20dp"
+                            android:text="@string/picture_with_IPC_Assets"
+                            android:textColor="#6d6b77"
+                            android:textFontWeight="400"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+
+                            android:layout_marginRight="10dp"
+                            app:layout_constraintEnd_toStartOf="@+id/cameraActions"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+                        <RelativeLayout
+                            android:id="@+id/cameraActions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+                            <LinearLayout
+                                android:id="@+id/actions2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="@{viewModel.captured2Visibility}"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/view2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@mipmap/view" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@mipmap/circlecheck" />
+
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/capture2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:background="#dde0f6"
+                                android:fontFamily="@font/publicsans"
+                                android:paddingHorizontal="20dp"
+                                android:text="@string/capture"
+                                android:textAllCaps="false"
+                                android:textColor="@color/purple_500"
+                                android:textFontWeight="700"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:visibility="@{viewModel.capture2Visibility}"
+                                />
+                        </RelativeLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/public_sans"
+                            android:lineHeight="20dp"
+                            android:text="@string/consent_card_picture"
+                            android:textColor="#6d6b77"
+                            android:textFontWeight="400"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="10dp"
+                            app:layout_constraintEnd_toStartOf="@+id/capture3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="@id/actions3"/>
+
+                        <LinearLayout
+                            android:id="@+id/actions3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:visibility="@{viewModel.captured3Visibility}">
+
+                            <ImageView
+                                android:id="@+id/view3"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/view" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/circlecheck" />
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/capture3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:background="#dde0f6"
+                            android:fontFamily="@font/publicsans"
+                            android:paddingHorizontal="20dp"
+                            android:text="@string/capture"
+                            android:visibility="@{viewModel.capture3Visibility}"
+                            android:textAllCaps="false"
+                            android:textColor="@color/purple_500"
+                            android:textFontWeight="700"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/public_sans"
+                            android:lineHeight="20dp"
+                            android:text="@string/image_of_all_TG_where_faces_are_visible"
+                            android:textColor="#6d6b77"
+                            android:textFontWeight="400"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="10dp"
+                            app:layout_constraintEnd_toStartOf="@+id/capture4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="@id/actions4"/>
+
+                        <LinearLayout
+                            android:id="@+id/actions4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{viewModel.captured4Visibility}"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/view4"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/view" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/circlecheck" />
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/capture4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:background="#dde0f6"
+                            android:fontFamily="@font/publicsans"
+                            android:paddingHorizontal="20dp"
+                            android:text="@string/capture"
+                            android:textAllCaps="false"
+                            android:textColor="@color/purple_500"
+                            android:textFontWeight="700"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:visibility="@{viewModel.capture4Visibility}"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/public_sans"
+                            android:lineHeight="20dp"
+                            android:text="@string/image_while_conducting_tasty_twist"
+                            android:textColor="#6d6b77"
+                            android:textFontWeight="400"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="10dp"
+                            app:layout_constraintEnd_toStartOf="@+id/capture5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="@id/actions5"/>
+
+                        <LinearLayout
+                            android:id="@+id/actions5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:visibility="@{viewModel.captured5Visibility}">
+
+                            <ImageView
+                                android:id="@+id/view5"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/view" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/circlecheck" />
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/capture5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:background="#dde0f6"
+                            android:fontFamily="@font/publicsans"
+                            android:paddingHorizontal="20dp"
+                            android:text="@string/capture"
+                            android:textAllCaps="false"
+                            android:textColor="@color/purple_500"
+                            android:textFontWeight="700"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:visibility="@{viewModel.capture5Visibility}"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans"
+                        android:lineHeight="20dp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="@string/no_of_TG_present"
+                        android:textColor="#2F2B3D"
+                        android:textFontWeight="400"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans"
+                        app:boxStrokeErrorColor="@color/red"
+                        app:errorEnabled="true"
+                        app:error="@{viewModel.noOfTGPresentError}"
+                        app:errorIconTint="@color/red"
+                        app:errorTextColor="@color/red"
+                        app:layout_constraintTop_toBottomOf="@+id/loginHeader"
+                        app:placeholderText="@string/enter_here"
+                        app:prefixTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/no_of_TG_present"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineHeight="18dp"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textFontWeight="400"
+                            android:textSize="16sp"
+                            android:text="@={viewModel.noOfTGPresent}"
+                            />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans"
+                        android:lineHeight="20dp"
+                        android:text="@string/number_of_calendar_distributed"
+                        android:textColor="#2F2B3D"
+                        android:textFontWeight="400"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans"
+                        app:boxStrokeErrorColor="@color/red"
+                        app:errorEnabled="true"
+                        app:error="@{viewModel.numberOfCalendarDistributedError}"
+                        app:errorIconTint="@color/red"
+                        app:errorTextColor="@color/red"
+                        app:layout_constraintTop_toBottomOf="@+id/loginHeader"
+                        app:placeholderText="@string/enter_here"
+                        app:prefixTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/no_of_bindi_tool_distributed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineHeight="18dp"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textFontWeight="400"
+                            android:textSize="16sp"
+                            android:text="@={viewModel.numberOfCalendarDistributed}"
+                            />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/proceed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:background="@drawable/button_background_blue"
+                        android:fontFamily="@font/publicsans"
+                        android:text="@string/submit"
+                        android:textColor="@color/white"
+                        android:textFontWeight="700"
+                        android:textStyle="bold"
+                        android:enabled="@{viewModel.loginEnabled}"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dashboard_nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.hul.screens.field_auditor_dashboard.ui.dashboard.DashboardFragment"
+        android:label="DashboardFragment" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_attendenceFragment"
+            app:destination="@id/attendenceFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_visits"
+            app:destination="@id/mobiliserVisitsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/attendenceFragment"
+        android:name="com.hul.screens.field_auditor_dashboard.ui.attendence.AttendenceFragment"
+        android:label="AttendenceFragment" />
+    <fragment
+        android:id="@+id/schoolActivityFragment"
+        android:name="com.hul.screens.field_auditor_dashboard.ui.school_activity.AuditorSchoolFormFragment"
+        android:label="SchoolActivityFragment">
+        <action
+            android:id="@+id/action_reset_to_dashboard"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mobiliserVisitsFragment"
+        android:name="com.hul.screens.field_auditor_dashboard.ui.mobiliser_visits.MobiliserVisitsFragment"
+        android:label="MobiliserVisitsFragment">
+        <argument
+            android:name="mobiliserData"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_visits_school_activity"
+            app:destination="@id/schoolActivityFragment" />
+        <action
+            android:id="@+id/action_mobiliserVisitsFragment_to_attendenceFragment"
+            app:destination="@id/attendenceFragment" />
+
+    </fragment>
+
+
+</navigation>

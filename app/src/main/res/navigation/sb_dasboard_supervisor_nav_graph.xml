@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sb_dasboard_supervisor_nav_graph"
+    app:startDestination="@id/SBSupervisorDashboardFragment">
+
+    <fragment
+        android:id="@+id/SBSupervisorDashboardFragment"
+        android:name="com.hul.sb.supervisor.ui.dashboard.SBSupervisorDashboardFragment"
+        android:label="SBSupervisorDashboardFragment" >
+        <action
+            android:id="@+id/action_SBSupervisorDashboardFragment_to_SBSupervisorAttendenceFragment"
+            app:destination="@id/SBSupervisorAttendenceFragment" />
+        <action
+            android:id="@+id/action_SBSupervisorDashboardFragment_to_supervisorVisitsFragment"
+            app:destination="@id/supervisorVisitsFragment" />
+        <action
+            android:id="@+id/action_SBSupervisorDashboardFragment_to_supervisorFormFragment"
+            app:destination="@id/supervisorFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SBSupervisorAttendenceFragment"
+        android:name="com.hul.sb.supervisor.ui.attendence.SBSupervisorAttendenceFragment"
+        android:label="SBSupervisorAttendenceFragment" />
+    <fragment
+        android:id="@+id/supervisorVisitsFragment"
+        android:name="com.hul.skb.supervisor.ui.visits.SupervisorVisitsFragment"
+        android:label="SupervisorVisitsFragment" >
+        <action
+            android:id="@+id/action_supervisorVisitsFragment_to_supervisorFormFragment"
+            app:destination="@id/supervisorFormFragment" />
+        <action
+            android:id="@+id/action_supervisorVisitsFragment_to_SBSupervisorAttendenceFragment"
+            app:destination="@id/SBSupervisorAttendenceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/supervisorFormFragment"
+        android:name="com.hul.sb.supervisor.ui.form.SupervisorFormFragment"
+        android:label="SupervisorFormFragment" />
+</navigation>
